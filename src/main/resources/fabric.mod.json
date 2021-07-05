@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "storagedrawers",
+  "version": "${version}",
+  "name": "StorageDrawers",
+  "description": "A fabric port of the StorageDrawers mod",
+  "authors": [
+    "HypherionMC"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/storagedrawers/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.hypherionmc.storagedrawers.client.StorageDrawersClient"
+    ],
+    "main": [
+      "me.hypherionmc.storagedrawers.Storagedrawers"
+    ]
+  },
+  "mixins": [
+    "storagedrawers.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
